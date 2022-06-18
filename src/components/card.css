@@ -1,0 +1,35 @@
+.text {
+    margin: 2em
+}
+
+.card-container {
+    width: 450px;
+    height: 450px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 1em;
+}
+
+.card-container:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(214, 7, 7, 0.2);
+}
+
+.card-title {
+    padding: 15px;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-container {
+    width: 350px;
+    height: 350px;
+}
+
+.card-text {
+    font-weight: bold;
+    text-align: center;
+}
