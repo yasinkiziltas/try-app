@@ -1,3 +1,9 @@
-.custom {
-    
+.success {
+    background-color: green;
+}
+.error {
+    background-color: red;
+}
+.primary {
+    background-color: aquamarine;
 }
