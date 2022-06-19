@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export default function Styled() {
     const Button = styled.button`
-    color: #5c0011;
+    color: ${props => props.color ? props.color : "red"};
     font-size: 16px;
     font-weight: 800
     border: 2px solid #5c0011;
@@ -18,7 +18,7 @@ export default function Styled() {
     `
     return (
         <>
-            <Button>Hello main button!</Button>
+            <Button color='black'>Hello main button!</Button>
             <PrimaryBtn>Hello primary button!</PrimaryBtn>
         </>
     )
