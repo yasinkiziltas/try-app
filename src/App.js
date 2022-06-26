@@ -5,12 +5,13 @@ import Styled from './components/DemoApp-StyledComponents/Styled'
 import CssModules from './components/DemoApp-CssModules/CssModules'
 import DynamicCss from './components/DemoApp-CssModules/DynamicCss'
 import Fragment from './components/DemoApp-Fragment-Ref-Portal/Fragment'
+import Ref from './components/DemoApp-Fragment-Ref-Portal/Ref'
 import './app.css'
 
 export default function App() {
   return (
     <div >
-      <Fragment />
+      <Ref />
     </div>
   )
 }
