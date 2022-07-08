@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import './app.css'
 import DynamicCssStyle from './components/DemoApp-DynamicStyles/DynamicCssStyle'
 import DynamicInlineStyle from './components/DemoApp-DynamicStyles/DynamicInlineStyle'
 import Styled from './components/DemoApp-StyledComponents/Styled'
@@ -8,13 +9,12 @@ import Fragment from './components/DemoApp-Fragment-Ref-Portal/Fragment'
 import Ref from './components/DemoApp-Fragment-Ref-Portal/Ref'
 import Portal from './components/DemoApp-Fragment-Ref-Portal/Portal'
 import CreateElmnt from './components/DemoApp-CreateElement/CreateElmnt'
-
-import './app.css'
+import MyUseMemo from './components/DemoApp-Hooks/MyUseMemo'
 
 export default function App() {
   return (
     <div>
-      <CreateElmnt />
+      <MyUseMemo />
       {/* <Portal text="Body" target={document.body} /> */}
     </div>
   )
