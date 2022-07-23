@@ -1,9 +1,16 @@
 .App {
-  height: 100vh; /* Magic here */
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #282c34;
+}
+.chart {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .riskStatus {
   color: white;
