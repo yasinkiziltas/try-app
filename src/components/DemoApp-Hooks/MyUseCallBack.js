@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../../app.css'
+const functionCount = new Set()
 
 export default function MyUseCallBack() {
     const [counter, setCounter] = useState(0)
@@ -16,6 +17,11 @@ export default function MyUseCallBack() {
     const otherIncrement = () => {
         setOtherCounter(otherCounter + 1)
     }
+
+    functionCount.add(increment)
+    functionCount.add(decrement)
+    functionCount.add(otherIncrement)
+    console.log(functionCount);
 
     return (
         <div className='chart'>
