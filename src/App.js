@@ -12,12 +12,17 @@ import CreateElmnt from './components/DemoApp-CreateElement/CreateElmnt'
 import MyUseMemo from './components/DemoApp-Hooks/MyUseMemo'
 import MyForwardRef from './components/DemoApp-Hooks/MyForwardRef'
 import MyUseCallBack from './components/DemoApp-Hooks/MyUseCallBack'
+import MyUseReducer from './components/DemoApp-Hooks/MyUseReducer'
+import FormExample from './components/DemoApp-Inputs/FormExample'
 
 export default function App() {
   return (
-    <div className='App'>
-      <MyUseCallBack />
-      {/* <Portal text="Body" target={document.body} /> */}
+    <div>
+        <FormExample />
     </div>
   )
 }
+
+
+
+{/* <Portal text="Body" target={document.body} /> */}

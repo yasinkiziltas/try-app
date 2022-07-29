@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import '../../app.css'
 const functionCount = new Set()
 
@@ -6,17 +6,30 @@ export default function MyUseCallBack() {
     const [counter, setCounter] = useState(0)
     const [otherCounter, setOtherCounter] = useState(0)
 
-    const increment = () => {
+    // const increment = () => {
+    //     setCounter(counter + 1)
+    // }
+
+    // const decrement = () => {
+    //     setCounter(counter - 1)
+    // }
+
+    // const otherIncrement = () => {
+    //     setOtherCounter(otherCounter + 1)
+    // }
+
+    const increment = useCallback(() => {
         setCounter(counter + 1)
-    }
-
-    const decrement = () => {
+    }, [counter])
+ 
+    const decrement = useCallback(() => {
         setCounter(counter - 1)
-    }
-
-    const otherIncrement = () => {
-        setOtherCounter(otherCounter + 1)
-    }
+    }, [counter])
+ 
+    const otherIncrement = useCallback(() => {
+        setOtherCounter(counter + 1)
+    }, [otherCounter])
+ 
 
     functionCount.add(increment)
     functionCount.add(decrement)
