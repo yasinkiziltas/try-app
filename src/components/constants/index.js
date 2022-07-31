@@ -1,0 +1,1 @@
+export const LOGO = "https://trypyramid.com/img/pyramid-logo-black-horizontal.png"
