@@ -14,11 +14,12 @@ import MyForwardRef from './components/DemoApp-Hooks/MyForwardRef'
 import MyUseCallBack from './components/DemoApp-Hooks/MyUseCallBack'
 import MyUseReducer from './components/DemoApp-Hooks/MyUseReducer'
 import FormExample from './components/DemoApp-Inputs/FormExample'
-
+import SplitExample from './components/DemoApp-Split/SplitExample' 
+ 
 export default function App() {
   return (
     <div>
-      <FormExample />
+      <SplitExample />
     </div>
   )
 }
